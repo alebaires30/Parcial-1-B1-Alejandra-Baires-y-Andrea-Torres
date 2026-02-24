@@ -34,20 +34,119 @@ header {
 }
 
 main {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fcfcfc;
+    flex-grow:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+    background:linear-gradient(135deg,#ffcbe7,#ffc8f7);
+}
+
+.container-lectoplay {
+    background:white;
+    padding:40px 30px;
+    border-radius:25px;
+    width:100%;
+    max-width:880px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+    animation:flotar 0.7s ease;
+}
+
+.container-lectoplay h1{
+    font-size:2.3rem;
+    font-weight:900;
+    text-transform:uppercase;
+    margin-bottom:10px;
+    letter-spacing:1px;
+}
+
+.subtitle{
+    font-size:1rem;
+    color:#555;
+    margin-bottom:25px;
+}
+
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    border: 3px dashed #e169ff;
+    box-shadow: none; 
+}
+
+input, select {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding:12px;
+    border-radius:12px;
+    border:2px solid #e0e0e0;
+    outline:none;
+    transition:0.3s;
+    font-size:14px;
+}
+
+input:focus, select:focus {
+    border-color: #ff69b4;
+}
+
+button{
+    padding:14px;
+    border:none;
+    border-radius:14px;
+    background:linear-gradient(135deg,#ff7a18,#ffb347);
+    color:white;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+.error{
+    background: #ffe6e6;
+    color: #d8000c;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    display: none; 
+}
+
+cake-quoter .resultado{
+    margin-top: 25px;
+    background:#f1fff5;
+    padding:15px;
+    font-size:16px;
+    border-radius:12px;
+    font-weight:bold;
+    color:#4b49e4;
+}
+
+.subtitle {
+    color: #555;
+    margin-bottom: 25px;
+    font-weight: bold;
 }
 
 h1 {
-    font-size: 4.5rem;
-    color: #333333;
-    font-weight: 900;
-    text-transform: uppercase;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
+    color: #ff69b4;
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    color: #0c1b98;
+    margin-top: 10px;
+}
 
 footer {
     background-color: #1c2bc0;
